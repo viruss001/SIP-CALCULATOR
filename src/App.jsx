@@ -212,7 +212,14 @@ function App() {
                     min="100"
                     max="500000"
                     step="500"
-                    onChange={(e) => setMonthlyAmount(Number(e.target.value))}
+                   onChange={(e) => {
+  const value = e.target.value;
+  if (value === '') {
+    setMonthlyAmount('');
+  } else {
+    setMonthlyAmount(Number(value));
+  }
+}}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 text-lg"
                   />
                   <input
@@ -221,7 +228,14 @@ function App() {
                     max="500000"
                     step="500"
                     value={monthlyAmount}
-                    onChange={(e) => setMonthlyAmount(Number(e.target.value))}
+                    onChange={(e) => {
+  const value = e.target.value;
+  if (value === '') {
+    setMonthlyAmount('');
+  } else {
+    setMonthlyAmount(Number(value));
+  }
+}}
                     className="w-full mt-2"
                   />
                 </div>
@@ -237,7 +251,14 @@ function App() {
                     min="1"
                     max="40"
                     value={years}
-                    onChange={(e) => setYears(Number(e.target.value))}
+                    onChange={(e) => {
+  const value = e.target.value;
+  if (value === '') {
+    setYears('');
+  } else {
+    setYears(Number(value));
+  }
+}}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 text-lg"
                   />
                   <input
@@ -245,7 +266,14 @@ function App() {
                     min="1"
                     max="40"
                     value={years}
-                    onChange={(e) => setYears(Number(e.target.value))}
+                    onChange={(e) => {
+  const value = e.target.value;
+  if (value === '') {
+    setYears('');
+  } else {
+    setYears(Number(value));
+  }
+}}
                     className="w-full mt-2"
                   />
                 </div>
@@ -262,7 +290,14 @@ function App() {
                     max="100"
                     step="0.5"
                     value={expectedReturn}
-                    onChange={(e) => setExpectedReturn(Number(e.target.value))}
+                    onChange={(e) => {
+  const value = e.target.value;
+  if (value === '') {
+    setExpectedReturn('');
+  } else {
+    setExpectedReturn(Number(value));
+  }
+}}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 text-lg"
                   />
                   <input
@@ -271,7 +306,14 @@ function App() {
                     max="100"
                     step="0.5"
                     value={expectedReturn}
-                    onChange={(e) => setExpectedReturn(Number(e.target.value))}
+                    onChange={(e) => {
+  const value = e.target.value;
+  if (value === '') {
+    setExpectedReturn('');
+  } else {
+    setExpectedReturn(Number(value));
+  }
+}}
                     className="w-full mt-2"
                   />
                 </div>
